@@ -1,5 +1,9 @@
 {
-    "text": "Hello, this is a test of the Kyutai TTS 1.6B model. The automation script is working correctly and generating audio from text.",
-    "voice": "Show host (US, m)",
-    "chunkSize": 500
+  "voice": "Show host (US, m)",
+  "parts": [
+    {
+      "id": 4,
+      "text": "At dawn she found old Sero, the blind ferryman who hadn't crossed water in a decade but still sat at the dock speaking truth to anyone brave enough to listen. She told him everything. He was quiet a long time. Then he said something that struck her like a thrown stone. The dead man didn't test you Maren. Your own hunger did. And hunger wearing the mask of fairness is the most dangerous kind because you feed it and call it justice. She wanted to argue. She wanted to say she deserved something."
+    }
+  ]
 }
