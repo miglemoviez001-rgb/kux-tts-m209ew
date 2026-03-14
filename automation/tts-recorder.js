@@ -194,6 +194,8 @@ console.log('');
     // ═══════════════════════════════════
     let page = null;
     let roundNum = 0;
+    let partsProcessedSinceRefresh = 0;
+    const CHUNKS_PER_REFRESH = 5;
     
     while (completed.size < parts.length) {
         roundNum++;
@@ -208,10 +210,19 @@ console.log('');
             break;
         }
         
+        // Check if we need to force a refresh (after 5 chunks)
+        if (page && partsProcessedSinceRefresh >= CHUNKS_PER_REFRESH) {
+            console.log(`\n🔄 Force refreshing page after ${CHUNKS_PER_REFRESH} parts (batch limit)...`);
+            try { await page.close(); } catch {}
+            page = null;
+            partsProcessedSinceRefresh = 0;
+        }
+
         // Setup or reuse page
         if (!page || page.isClosed()) {
             try {
                 page = await setupPage();
+                partsProcessedSinceRefresh = 0;
             } catch (e) {
                 console.log(`❌ Page setup failed: ${e.message}. Retrying in 10s...`);
                 await new Promise(r => setTimeout(r, 10000));
@@ -230,6 +241,7 @@ console.log('');
             try {
                 const result = await processPart(page, part);
                 completed.add(part.id);
+                partsProcessedSinceRefresh++;
                 console.log(`   ✅ part_${part.id}.wav (${(result.size / 1024).toFixed(1)} KB) — ${completed.size}/${parts.length} done`);
                 
                 // Small pause between parts (let page settle)
