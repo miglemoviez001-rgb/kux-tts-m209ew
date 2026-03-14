@@ -1,6 +1,22 @@
 {
-  "voice": "Show host (US, m)",
+  "voice": "voice-donations/spanish-limaperu_enhanced.wav",
   "parts": [
+    {
+      "id": 26,
+      "text": "¿Cuántas veces pusiste un límite con palabras pero lo borraste con los hechos al día siguiente? Cada vez que eso pasó, le confirmaste algo que ahora él lleva grabado en la médula: que la falta de respeto funciona, que puede usarte como depósito de su frustración, de su mal humor, de su mediocridad emocional, y que tú seguirás ahí — absorbiendo, perdonando, justificando, inventando excusas que él ni siquiera se molesta en fabricar porque tú las fabricas por los dos."
+    },
+    {
+      "id": 27,
+      "text": "A nosotras nos criaron con un veneno que nos presentaron como la más alta virtud: nos dijeron que la mujer buena perdona siempre, comprende siempre, aguanta siempre, se adapta siempre. Que poner límites firmes es ser difícil. Que exigir respeto es ser agresiva. Que retirarte cuando alguien te maltrata es ser fría y orgullosa. Y ese veneno disfrazado de nobleza nos ha costado años — décadas — de dolor absolutamente innecesario."
+    },
+    {
+      "id": 28,
+      "text": "Porque cada vez que perdonas sin que haya consecuencia real, no estás siendo noble ni generosa — estás entrenando a la otra persona para que te trate peor la próxima vez. Cada vez que dices \"está bien\" cuando claramente no está bien, firmas un contrato invisible que dice: puedes seguir haciendo esto, yo me quedo igual."
+    },
+    {
+      "id": 29,
+      "text": "Teodora entendió algo que a muchas de nosotras nos toma la vida entera aprender: el respeto no se pide con buenas palabras ni se gana con buen comportamiento — se impone con la disposición real, visible, tangible de irte cuando te tratan por debajo de lo que vales. Cuando Teodora ya estaba en el trono junto a Justiniano, hubo un momento que selló su nombre en la historia para siempre. Una revuelta masiva amenazaba con destruir el imperio completo. Los consejeros temblaban."
+    },
     {
       "id": 30,
       "text": "Los generales preparaban barcos para huir. El propio Justiniano dudaba. Todo el mundo quería correr. Teodora se puso de pie en medio de ese caos y dijo algo que todavía resuena quince siglos después: la púrpura imperial es la mejor mortaja — prefiero morir como emperatriz que vivir como fugitiva. No huyó. Y porque ella no huyó, nadie huyó. La revuelta se aplastó. El imperio sobrevivió. ¿Sabes qué demostró Teodora en ese instante?"
